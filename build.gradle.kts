@@ -25,7 +25,7 @@ buildscript {
 plugins {
 	id("com.jfrog.bintray") version "1.8.4"
 	id("com.github.ben-manes.versions") version "0.20.0"
-	id("com.github.johnrengelman.shadow") version "2.0.4" apply false
+	id("com.github.johnrengelman.shadow") version "4.0.0" apply false
 	id("org.sonarqube") version "2.6.2"
 	id("io.gitlab.arturbosch.detekt")
 	`kotlin-dsl`
@@ -33,7 +33,7 @@ plugins {
 }
 
 tasks.withType<Wrapper> {
-	gradleVersion = "4.10.1"
+	gradleVersion = "4.10.2"
 	distributionType = Wrapper.DistributionType.ALL
 }
 
